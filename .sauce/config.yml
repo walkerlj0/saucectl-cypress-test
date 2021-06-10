@@ -1,0 +1,36 @@
+apiVersion: v1alpha
+kind: cypress
+defaults:
+  mode: sauce
+sauce:
+  region: us-west-1
+  concurrency: 2
+  metadata:
+    name: saucectl cypress example
+    tags:
+      - e2e
+      - release team
+      - other tag
+    build: Github Run $GITHUB_RUN_ID
+docker:
+  fileTransfer: copy
+cypress:
+  version: 7.3.0
+  configFile: "cypress.json"
+rootDir: ./
+suites:
+  - name: "Tutorial test - Windows Chrome" # Since the suite doesn't specify the `mode`, it'll inherit the mode specified via `defaults.mode` (see line number 3 and 4 of this config file).
+    browser: "chrome"
+    platformName: "Windows 10" # Only relevant when running a test against the sauce cloud mode.
+    screenResolution: "1920x1080"  # (optional) Only relevant when running a test against the sauce cloud mode.
+    config:
+      testFiles: ['**/login.spec.js'] # Cypress native glob support.
+
+
+# Controls what artifacts to fetch when the suite on Sauce Cloud has finished.
+artifacts:
+  download:
+    when: never
+    match:
+      - console.log
+    directory: ./artifacts/

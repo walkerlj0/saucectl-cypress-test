@@ -1,0 +1,5 @@
+cypress/videos/
+cypress/results/
+cypress/screenshots/
+__assets__
+**/__assets__
