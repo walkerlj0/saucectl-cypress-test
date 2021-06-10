@@ -17,7 +17,7 @@ Take a look at the project structure on the right. Open the `/cypress` directory
 
 * `/integration` – This is a default directory that is used for Cypress tests. You will create a login test here with some checks to make sure the login functionality on saucedemo.com is working. 
 
-* `support` –  This file is created with your Cypress test by default.This is the directory where actions that occur before test files runs are kept. In this example we will be using it to store Sauce Labs credentials.
+* `support` –  This file is created with your Cypress test by default. This is the directory where actions that occur before test files runs are kept. In this example we will be using it to store Sauce Labs credentials.
 
 * `plugins` – This file is created with your Cypress test by default, and is used if you want to manage the Node process to modify your Cypress environment.
 
@@ -37,7 +37,8 @@ It's important to keep the tests in this directory as you will need tests to be 
 Notice there is just one test object in this directory, called `login.spec.js`. This will contain the code that runs the `it()` statements that will test the functionality of the [login flow](https://www.saucedemo.com/).
 
 ### 1.04 The Pageobjects Directory
-opn up the pageobjects
+Open up the pageobjects directory and notice there are two files:
+* 
 
 
 ## 2.1 Create Page Objects
