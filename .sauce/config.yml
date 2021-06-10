@@ -24,7 +24,7 @@ suites:
     platformName: "Windows 10"
     screenResolution: "1920x1080"
     config:
-      testFiles: ['**/*.*']
+      testFiles: ['**/login.spec.js'] # Cypress native glob support.
   - name: "Tutorial test - Windows Firefox 89"
     platformName: "Windows 10"
     browser: "firefox"
