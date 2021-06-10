@@ -4,6 +4,7 @@ import SwagOverviewPage from '../pageobjects/SwagOverviewPage';
 import { LOGIN_USERS } from '../support/constants';
 
 describe('LoginPage', () => {
+<<<<<<< HEAD
    beforeEach(() => {
        cy.visit('');
    });
@@ -21,4 +22,9 @@ describe('LoginPage', () => {
        LoginPage.signIn(LOGIN_USERS.LOCKED);
        LoginPage.errorMessage.should('have.text','Epic sadface: Sorry, this user has been locked out.');
    });
+=======
+  beforeEach(() => {
+    cy.visit('');
+  });
+>>>>>>> a1e4c9c9c2677d7019571dabeee2a8e43c8c9205
 });

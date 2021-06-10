@@ -1,5 +1,6 @@
 // filename: cypress/pageobjects/LoginPage.js
 class LoginPage {
+<<<<<<< HEAD
    get screen() {
        return cy.get('#login_button_container');
    }
@@ -32,6 +33,8 @@ class LoginPage {
 
     this.loginButton.click();
   }
+=======
+>>>>>>> a1e4c9c9c2677d7019571dabeee2a8e43c8c9205
 }
 
 export default new LoginPage();

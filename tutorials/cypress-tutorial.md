@@ -1,6 +1,15 @@
 # What You'll Learn
 
-This is an introduction to your tutorial. It will show up on the first page when your tutorial is started.
+* Understand the configuration files for Cypress on the Sauce Labs platform with saucectl and how to modify them
+
+* Learn basic JavaScript to write page object and test code that runs on Cypress and saucectl with the Sauce Labs platform (Optional)
+
+* Create Page objects in your Cypress test project
+
+* Create tests in your Cypress test project
+
+* Set up the necessary components to run Cypress and saucectl with the Sauce Labs platform on your computer
+
 
 ## 1. Cypress Project Introduction
 
