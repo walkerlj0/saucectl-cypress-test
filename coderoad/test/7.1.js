@@ -24,7 +24,7 @@ describe("Tutorial Saucectl Cypress Test", async () => {
     });
 
     describe("Test .sauce/config.yml suites with proper value", () => {
-        it("Test config.yml suites'length is greater than 1", async () => {
+        it("Test config.yml suites'length is greater than 0", async () => {
             const result = yaml.load(await fsPromises.readFile(sauceConfigPath, 'utf-8'));
             const suites = result['suites'];
             expect(suites).length.greaterThan(0);
