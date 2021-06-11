@@ -21,4 +21,3 @@ describe('LoginPage', () => {
        LoginPage.signIn(LOGIN_USERS.LOCKED);
        LoginPage.errorMessage.should('have.text','Epic sadface: Sorry, this user has been locked out.');
    });
-});
