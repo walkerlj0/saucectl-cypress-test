@@ -17,7 +17,3 @@ describe('LoginPage', () => {
        SwagOverviewPage.screen.should('be.visible');
    });
 
-   it('should not be able to login with a locked user', () => {
-       LoginPage.signIn(LOGIN_USERS.LOCKED);
-       LoginPage.errorMessage.should('have.text','Epic sadface: Sorry, this user has been locked out.');
-   });
