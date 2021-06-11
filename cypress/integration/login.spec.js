@@ -7,7 +7,7 @@ describe('LoginPage', () => {
    beforeEach(() => {
        cy.visit('');
    });
-
+   
    it('should be able to test loading of login page', () => {
        LoginPage.screen.should('be.visible');
    });
@@ -17,3 +17,4 @@ describe('LoginPage', () => {
        SwagOverviewPage.screen.should('be.visible');
    });
 
+});
